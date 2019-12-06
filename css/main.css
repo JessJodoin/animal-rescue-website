@@ -1,8 +1,27 @@
+html {
+  font-family: Georgia, serif;
+}
+
+.masthead {
+  background-color: #5ebfbf;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #5ebfbf;
+  background-color: #fff;
+  text-decoration: none;
+}
+
 header [type="checkbox"] + label::before {
   top: -10em;
 }
 
-.nav-close {
+.nav-opened {
   display: none;
 }
 
@@ -20,4 +39,16 @@ header [type="checkbox"] + label::before {
 
 .nav-d {
   display: none;
+}
+
+.adopt-section {
+  background-color: #f2dcc9;
+}
+
+hr {
+  border: 3px solid #5ebfbf;
+}
+
+.footer {
+  background-color: #5EBFBF;
 }
