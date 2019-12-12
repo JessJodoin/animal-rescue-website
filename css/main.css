@@ -1,48 +1,83 @@
 html {
   font-family: Georgia, serif;
+  background: url("../images/bone-background.svg") left top 48px repeat rgba(242, 220, 201, .4);
+}
+
+main {
+  background-color: #fff;
 }
 
 .masthead {
   background-color: #5ebfbf;
 }
 
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
 .nav a {
   color: #fff;
   text-decoration: none;
+  font-family: Verdana, sans-serif;
 }
 
 .nav a:hover {
+  color: #bf3e0f;
+  text-shadow: 0 0 6px #fff;
+  text-decoration: underline solid #bf3e0f;
+}
+
+h2 {
+  font-family: Verdana, sans-serif;
+}
+
+.rescue-section {
+  background-color: rgba(191, 62, 14, .3);
+}
+
+.main-rescue-btn {
+  color: #fff;
+  background-color: #bf3e0f;
+  border: 3px solid #bf3e0f;
+}
+
+.main-rescue-btn:hover {
+  color: #bf3e0f;
+  background-color: #fff;
+  border: 3px solid #bf3e0f;
+}
+
+.about-image {
+  object-fit: cover;
+}
+
+.donate-section {
+  background-color: rgba(94, 191, 191, .3);
+}
+
+.main-donate-btn {
+  color: #fff;
+  background-color: #5ebfbf;
+  border: 3px solid #5ebfbf;
+}
+
+.main-donate-btn:hover {
   color: #5ebfbf;
   background-color: #fff;
-  text-decoration: none;
+  border: 3px solid #5ebfbf;
 }
 
-header [type="checkbox"] + label::before {
-  top: -10em;
-}
-
-.nav-opened {
-  display: none;
-}
-
-.nav-check:checked ~ .nav {
-  display: block;
-}
-
-.nav-check:checked ~ .nav-label .nav-open {
-  display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-close {
-  display: block;
-}
-
-.nav-d {
-  display: none;
-}
-
-.adopt-section {
+.main-adopt-btn {
+  color: #555;
   background-color: #f2dcc9;
+  border: 3px solid #f2dcc9;
+}
+
+.main-adopt-btn:hover {
+  color: #333;
+  background-color: #fff;
+  border: 3px solid #f2dcc9;
 }
 
 hr {
@@ -51,4 +86,55 @@ hr {
 
 .footer {
   background-color: #5EBFBF;
+}
+
+.footer-nav {
+  max-width: 20em;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-nav .current-footer {
+  color: #f2dcc9;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .rescue-section {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .main-rescue-content {
+    width: 100%;
+    background-image : linear-gradient(to bottom, transparent,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .donate-section {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .main-donate-content {
+    width: 100%;
+    background-image : linear-gradient(to bottom, transparent,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
 }
