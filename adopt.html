@@ -19,13 +19,13 @@
     <li><a href="#footer">Jump to footer content</a></li>
   </ul>
 
-  <header class="masthead">
+  <header class="masthead" role="banner">
     <div class="grid">
       <div class="unit xs-1 s-1 m-1-3 l-1-4 gutter">
-        <a href="index.html"><img class="img-flex" src="images/bark-logo.png" alt="BARK logo"></a>
+        <a href="index.html" tabindex="0"><img class="img-flex" src="images/bark-logo.png" alt="BARK logo"></a>
       </div>
 
-      <nav class="unit xs-1 s-1 m-2-3 unit-push-l-1-4 l-1-2 nav center-content-horizontal">
+      <nav class="unit xs-1 s-1 m-2-3 unit-push-l-1-4 l-1-2 nav center-content-horizontal" id="nav" role="navigation" tabindex="0">
         <ul class="list-group-inline push-0">
           <li><a class="gutter pad-t-1-2 pad-b-1-2 block mega" href="rescues.html">Rescues</a></li>
           <li><a class="current gutter pad-t-1-2 pad-b-1-2 block mega" href="adopt.html">Adopt</a></li>
@@ -35,8 +35,8 @@
     </div>
   </header>
 
-  <main class="max-length">
-    <section class="gutter pad-t">
+  <main class="max-length" id="main" role="main" tabindex="0">
+    <section class="gutter pad-t" tabindex="0">
       <div>
         <form class="push-0" role="search" method="POST" action="https://formspree.io/jodo0083@algonquinlive.com">
           <fieldset class="push-3-4">
@@ -45,57 +45,57 @@
             <div class="grid">
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
                 <label class="push-1-8 kilo" for="name-f">First Name</label>
-                <input id="name-f" name="name" required>
+                <input id="name-f" name="name" required tabindex="0">
               </div>
 
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-l">
                 <label class="push-1-8 kilo" for="name-l">Last Name</label>
-                <input id="name-l" name="name" required>
+                <input id="name-l" name="name" required tabindex="0">
               </div>
 
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
                 <label class="push-1-8 kilo" for="age">Age</label>
-                <input id="age" name="age" required>
+                <input id="age" name="age" required tabindex="0">
               </div>
 
               <div class="unit xs-1 s-1 m-1 l-1 push">
                 <label class="push-1-8 kilo" for="work">Occupation</label>
-                <input id="work" name="work" required>
+                <input id="work" name="work" required tabindex="0">
               </div>
 
               <div class="unit xs-1 s-1 m-1 l-1 push">
-                <h3 class="push-1-2 mega">Address</h3>
+                <h1 class="push-1-2 mega">Address</h1>
                 <div class="grid">
                   <div class="unit xs-1 s-1 m-1 l-1 push">
                     <label class="push-1-8 kilo" for="street">Street Address</label>
-                    <input id="street" name="street" required>
+                    <input id="street" name="street" required tabindex="0">
                   </div>
 
                   <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
                     <label class="push-1-8 kilo" for="city">City</label>
-                    <input id="city" name="city" required>
+                    <input id="city" name="city" required tabindex="0">
                   </div>
 
                   <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-l">
                     <label class="push-1-8 kilo" for="province">Province</label>
-                    <input id="province" name="province" required>
+                    <input id="province" name="province" required tabindex="0">
                   </div>
 
                   <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
                     <label class="push-1-8 kilo" for="postal">Postal Code</label>
-                    <input id="postal" name="postal" required>
+                    <input id="postal" name="postal" required tabindex="0">
                   </div>
                 </div>
               </div>
 
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
                 <label class="push-1-8 kilo" for="tel">Phone Number</label>
-                <input id="tel" type="tel" name="tel" required>
+                <input id="tel" type="tel" name="tel" required tabindex="0">
               </div>
 
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-l">
                 <label class="push-1-8 kilo" for="email">Email</label>
-                <input id="email" type="email" name="email" required>
+                <input id="email" type="email" name="email" required tabindex="0">
               </div>
             </div>
           </fieldset>
@@ -107,7 +107,7 @@
 
             <div class="push">
               <label class="push-1-4 kilo" for="dewlling">Type of dewlling you live in</label>
-              <select id="dewlling" name="dewlling">
+              <select id="dewlling" name="dewlling" tabindex="0">
                 <option>Select One</option>
                 <option>House</option>
                 <option>Apartment</option>
@@ -118,10 +118,10 @@
             <div class="push">
               <h4 class="push-1-4 kilo not-bold">Do you rent or own?</h4>
               <div>
-                <input id="rent" type="radio" name="rent-own">
+                <input id="rent" type="radio" name="rent-own" tabindex="0">
                 <label class="push-r" for="rent">Rent</label>
 
-                <input id="own" type="radio" name="rent-own">
+                <input id="own" type="radio" name="rent-own" tabindex="0">
                 <label class="push-r" for="own">Own</label>
               </div>
             </div>
@@ -129,10 +129,10 @@
             <div class="push">
               <h4 class="push-1-4 kilo not-bold">Do you have a fenced in yard?</h4>
               <div>
-                <input id="yes" type="radio" name="yard">
+                <input id="yes" type="radio" name="yard" tabindex="0">
                 <label class="push-r" for="yes">Yes</label>
 
-                <input id="no" type="radio" name="yard">
+                <input id="no" type="radio" name="yard" tabindex="0">
                 <label class="push-r" for="no">No</label>
               </div>
             </div>
@@ -146,21 +146,21 @@
             <div class="grid">
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
                 <label class="push-1-8 kilo" for="dog-name">Name of Dog</label>
-                <input id="dog-name" name="name" required>
+                <input id="dog-name" name="name" required tabindex="0">
               </div>
 
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-l">
                 <label class="push-1-8 kilo" for="dog-id">Animal ID Number</label>
-                <input id="dog-id" name="name" required>
+                <input id="dog-id" name="name" required tabindex="0">
               </div>
 
               <div class="unit xs-1 s-1 m-1 l-1 push">
                 <h4 class="push-1-4 kilo not-bold">Have you all agreed to adopt?</h4>
                 <div>
-                  <input id="yes-adopt" type="radio" name="agree-adopt">
+                  <input id="yes-adopt" type="radio" name="agree-adopt" tabindex="0">
                   <label class="push-r" for="yes-adopt">Yes</label>
 
-                  <input id="no-adopt" type="radio" name="agree-adopt">
+                  <input id="no-adopt" type="radio" name="agree-adopt" tabindex="0">
                   <label class="push-r" for="no-adopt">No</label>
                 </div>
               </div>
@@ -168,23 +168,23 @@
               <div class="unit xs-1 s-1 m-1 l-1 push">
                 <h4 class="push-1-4 kilo not-bold">Are there any known animal allergies?</h4>
                 <div>
-                  <input id="yes-all" type="radio" name="allergies">
+                  <input id="yes-all" type="radio" name="allergies" tabindex="0">
                   <label class="push-r" for="yes-all">Yes</label>
 
-                  <input id="no-all" type="radio" name="allergies">
+                  <input id="no-all" type="radio" name="allergies" tabindex="0">
                   <label class="push-r" for="no-all">No</label>
                 </div>
               </div>
 
               <div class="unit xs-1 s-1 m-1 l-1 push">
-                <h4 class="push-1-8 kilo not-bold" id="why-adopt">Why do you want to adopt?</h4>
-                <textarea id="why-adopt" rows="8" cols="50" name="comment">Enter text here...</textarea>
+                <h4 class="push-1-8 kilo not-bold">Why do you want to adopt?</h4>
+                <textarea id="why-adopt" rows="8" cols="50" name="comment" tabindex="0">Enter text here...</textarea>
               </div>
             </div>
           </fieldset>
 
           <div class="center-content pad-b-2">
-            <button class="btn submit-btn bold tera gutter-2" type="submit">Submit</button>
+            <button class="btn submit-btn bold tera gutter-2" type="submit" tabindex="0">Submit</button>
             <input type="hidden" name="_subject" value="Adoption Inquiry">
           </div>
         </form>
@@ -192,7 +192,7 @@
     </section>
   </main>
 
-  <footer class="footer pad-t pad-b-1-2 gutter center-content">
+  <footer class="footer pad-t pad-b-1-2 gutter center-content" id="footer" role="contentinfo" tabindex="0">
     <nav class="footer-nav">
       <ul class="list-group-inline push-3-4">
         <li><a class="gutter-1-4" href="index.html">Home</a></li>
