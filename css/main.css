@@ -28,11 +28,15 @@ main {
   text-decoration: underline solid #bf3e0f;
 }
 
-h2 {
-  font-family: Verdana, sans-serif;
+li .current {
+  color: #f2dcc9;
+  text-decoration: underline;
 }
 
-h3 {
+h2,
+h3,
+legend,
+.submit-btn {
   font-family: Verdana, sans-serif;
 }
 
@@ -118,8 +122,35 @@ h3 {
   border: 3px solid #bf3e0f;
 }
 
+fieldset {
+  border: none;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #5ebfbf;
+  border-radius: 10px;
+}
+
+input[type="radio"] + label::before {
+  border: 2px solid #5ebfbf;
+}
+
 hr {
+  border: 3px solid #bf3e0f;
+}
+
+.submit-btn {
+  color: #fff;
+  background-color: #5ebfbf;
   border: 3px solid #5ebfbf;
+}
+
+.submit-btn:hover {
+  color: #fff;
+  background-color: #bf3e0f;
+  border: 3px solid #bf3e0f;
 }
 
 .footer {
@@ -173,6 +204,14 @@ hr {
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+
+  .pad-r {
+    padding-right: .65rem;
+  }
+
+  .pad-l {
+    padding-left: .65rem;
   }
 
 }
