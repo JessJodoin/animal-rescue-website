@@ -24,7 +24,7 @@ main {
 
 .nav a:hover {
   color: #bf3e0f;
-  text-shadow: 0 0 6px #fff;
+  background-color: #fff;
   text-decoration: underline solid #bf3e0f;
 }
 
@@ -92,6 +92,11 @@ h3,
   color: #333;
   background-color: #fff;
   border: 3px solid #f2dcc9;
+}
+
+.main-rescue-btn:focus,
+.main-donate-btn:focus {
+  outline-color: #fff;
 }
 
 .dog-images {
