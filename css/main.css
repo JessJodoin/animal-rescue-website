@@ -28,6 +28,12 @@ main {
   text-decoration: underline solid #bf3e0f;
 }
 
+.nav a:focus {
+  color: #bf3e0f;
+  background-color: #fff;
+  text-decoration: underline solid #bf3e0f;
+}
+
 li .current {
   color: #f2dcc9;
   text-decoration: underline;
@@ -36,7 +42,6 @@ li .current {
 h1,
 .title,
 h3,
-legend,
 .submit-btn {
   font-family: Verdana, sans-serif;
 }
@@ -168,6 +173,11 @@ hr {
 
 .footer-nav a {
   color: #fff;
+  text-decoration: underline;
+}
+
+.footer-nav a:hover {
+  color: #bf3e0f;
   text-decoration: underline;
 }
 

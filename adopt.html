@@ -43,7 +43,7 @@
       <div>
         <form class="push-0" role="search" method="POST" action="https://formspree.io/jodo0083@algonquinlive.com">
           <fieldset class="push-3-4">
-            <legend class="push-3-4 tera" tabindex="0">Personal details</legend>
+            <legend class="push-3-4 tera title" tabindex="0">Personal details</legend>
 
             <div class="grid">
               <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
@@ -106,9 +106,9 @@
           <hr>
 
           <fieldset class="push">
-            <legend class="push-3-4 tera">Living Situation</legend>
+            <legend class="push-3-4 tera title">Living Situation</legend>
 
-            <div class="push">
+            <div>
               <label class="push-1-4 kilo" for="dewlling">Type of dewlling you live in</label>
               <select id="dewlling" name="dewlling" tabindex="0">
                 <option>Select One</option>
@@ -117,74 +117,76 @@
                 <option>Condo</option>
               </select>
             </div>
+          </fieldset>
 
-            <div class="push">
-              <h2 class="push-1-4 kilo not-bold">Do you rent or own?</h2>
-              <div>
-                <input id="rent" type="radio" name="rent-own" tabindex="0">
-                <label class="push-r" for="rent">Rent</label>
+          <fieldset class="push">
+            <legend class="push-1-4 kilo not-bold">Do you rent or own?</legend>
+            <div>
+              <input id="rent" type="radio" name="rent-own" tabindex="0">
+              <label class="push-r" for="rent">Rent</label>
 
-                <input id="own" type="radio" name="rent-own" tabindex="0">
-                <label class="push-r" for="own">Own</label>
-              </div>
+              <input id="own" type="radio" name="rent-own" tabindex="0">
+              <label class="push-r" for="own">Own</label>
             </div>
+          </fieldset>
 
-            <div class="push">
-              <h2 class="push-1-4 kilo not-bold">Do you have a fenced in yard?</h2>
-              <div>
-                <input id="yes" type="radio" name="yard" tabindex="0">
-                <label class="push-r" for="yes">Yes</label>
+          <fieldset class="push">
+            <legend class="push-1-4 kilo not-bold">Do you have a fenced in yard?</legend>
+            <div>
+              <input id="yes" type="radio" name="yard" tabindex="0">
+              <label class="push-r" for="yes">Yes</label>
 
-                <input id="no" type="radio" name="yard" tabindex="0">
-                <label class="push-r" for="no">No</label>
-              </div>
+              <input id="no" type="radio" name="yard" tabindex="0">
+              <label class="push-r" for="no">No</label>
             </div>
           </fieldset>
 
           <hr>
 
-          <fieldset>
-            <legend class="push-3-4 tera">Adoption</legend>
+          <div class="grid">
+            <fieldset class="unit xs-1 s-1 m-1 l-1">
+              <legend class="push-3-4 tera">Adoption</legend>
 
-            <div class="grid">
-              <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
-                <label class="push-1-8 kilo" for="dog-name">Name of Dog</label>
-                <input id="dog-name" name="name" required tabindex="0">
-              </div>
+              <div class="grid">
+                <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-r">
+                  <label class="push-1-8 kilo" for="dog-name">Name of Dog</label>
+                  <input id="dog-name" name="name" required tabindex="0">
+                </div>
 
-              <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-l">
-                <label class="push-1-8 kilo" for="dog-id">Animal ID Number</label>
-                <input id="dog-id" name="name" required tabindex="0">
-              </div>
-
-              <div class="unit xs-1 s-1 m-1 l-1 push">
-                <h2 class="push-1-4 kilo not-bold">Have you all agreed to adopt?</h2>
-                <div>
-                  <input id="yes-adopt" type="radio" name="agree-adopt" tabindex="0">
-                  <label class="push-r" for="yes-adopt">Yes</label>
-
-                  <input id="no-adopt" type="radio" name="agree-adopt" tabindex="0">
-                  <label class="push-r" for="no-adopt">No</label>
+                <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-l">
+                  <label class="push-1-8 kilo" for="dog-id">Animal ID Number</label>
+                  <input id="dog-id" name="name" required tabindex="0">
                 </div>
               </div>
+            </fieldset>
 
-              <div class="unit xs-1 s-1 m-1 l-1 push">
-                <h2 class="push-1-4 kilo not-bold">Are there any known animal allergies?</h2>
-                <div>
+            <fieldset class="unit xs-1 s-1 m-1 l-1 push">
+              <legend class="push-1-4 kilo not-bold">Have you all agreed to adopt?</legend>
+              <div>
+                <input id="yes-adopt" type="radio" name="agree-adopt" tabindex="0">
+                <label class="push-r" for="yes-adopt">Yes</label>
+
+                <input id="no-adopt" type="radio" name="agree-adopt" tabindex="0">
+                <label class="push-r" for="no-adopt">No</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="unit xs-1 s-1 m-1 l-1 push">
+              <legend class="push-1-4 kilo not-bold">Are there any known animal allergies?</legend>
+              <div>
                   <input id="yes-all" type="radio" name="allergies" tabindex="0">
                   <label class="push-r" for="yes-all">Yes</label>
 
-                  <input id="no-all" type="radio" name="allergies" tabindex="0">
-                  <label class="push-r" for="no-all">No</label>
-                </div>
+                <input id="no-all" type="radio" name="allergies" tabindex="0">
+                <label class="push-r" for="no-all">No</label>
               </div>
+            </fieldset>
 
-              <div class="unit xs-1 s-1 m-1 l-1 push">
-                <lable class="push-1-8 kilo not-bold" aria-label="Why do you want to adopt?">Why do you want to adopt?</label>
-                <textarea id="why-adopt" rows="8" cols="50" name="comment" tabindex="0">Enter text here...</textarea>
-              </div>
-            </div>
-          </fieldset>
+            <fieldset class="unit xs-1 s-1 m-1 l-1 push">
+              <label class="push-1-8 kilo not-bold" for="why-adopt" aria-label="Why do you want to adopt?">Why do you want to adopt?</label>
+              <textarea id="why-adopt" rows="8" cols="50" name="comment" tabindex="0">Enter text here...</textarea>
+            </fieldset>
+          </div>
 
           <div class="center-content pad-b-2">
             <button class="btn submit-btn bold tera gutter-2" type="submit" tabindex="0">Submit</button>
