@@ -17,7 +17,7 @@ main {
 }
 
 .nav a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-family: Verdana, sans-serif;
 }
@@ -35,7 +35,7 @@ main {
 }
 
 li .current {
-  color: #f2dcc9;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -71,7 +71,7 @@ h3,
 }
 
 .main-donate-btn {
-  color: #fff;
+  color: #000;
   background-color: #5ebfbf;
   border: 3px solid #5ebfbf;
 }
@@ -97,6 +97,7 @@ h3,
 .main-rescue-btn:focus,
 .main-donate-btn:focus {
   outline-color: #fff;
+  background-color: #fff;
 }
 
 .dog-images {
@@ -122,8 +123,8 @@ h3,
 
 .rescue-about-btn {
   color: #fff;
-  background-color: #5ebfbf;
-  border: 3px solid #5ebfbf;
+  background-color: #000;
+  border: 3px solid #000;
 }
 
 .rescue-about-btn:hover {
@@ -153,14 +154,20 @@ hr {
 
 .submit-btn {
   color: #fff;
-  background-color: #5ebfbf;
-  border: 3px solid #5ebfbf;
+  background-color: #000;
+  border: 3px solid #000;
 }
 
 .submit-btn:hover {
   color: #fff;
   background-color: #bf3e0f;
   border: 3px solid #bf3e0f;
+}
+
+.submit-btn:focus {
+  color: #fff;
+  background-color: #bf3e0f;
+  outline-color: #000;
 }
 
 .footer {
@@ -177,8 +184,8 @@ hr {
 }
 
 .footer-nav a {
-  color: #fff;
-  text-decoration: underline;
+  color: #000;
+  text-decoration: none;
 }
 
 .footer-nav a:hover {
@@ -186,8 +193,14 @@ hr {
   text-decoration: underline;
 }
 
+.footer-nav a:focus {
+  color: #bf3e0f;
+  background-color: #fff;
+  text-decoration: underline solid #bf3e0f;
+}
+
 .footer-nav .current-footer {
-  color: #f2dcc9;
+  color: #000;
   text-decoration: underline;
 }
 
