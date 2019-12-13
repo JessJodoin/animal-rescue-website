@@ -152,6 +152,21 @@ hr {
   border: 3px solid #bf3e0f;
 }
 
+.dog-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.thanks {
+  color: #000;
+  text-decoration: none;
+}
+
+.thanks:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
 .submit-btn {
   color: #fff;
   background-color: #000;

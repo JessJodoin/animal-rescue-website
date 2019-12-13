@@ -124,6 +124,10 @@ svg.img-flex {
   width: 100%;
 }
 
+.embed-1by1, .embed--1by1 {
+  padding-top: 100%; /* Square */
+}
+
 .embed-3by2, .embed--3by2 {
   padding-top: 66.6%; /* Classic 35 mm film & most digital photos, landscape */
 }
